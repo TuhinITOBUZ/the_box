@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -7,9 +10,16 @@ body {
   background-color: #ffffff;
 }
 
+.navBackground {
+  width: 100%;
+  height: 10vh;
+}
+
 nav,
 .pageName,
 .navOptions {
+  position: fixed;
+  z-index: 100;
   display: flex;
   flex-direction: row;
   height: fit-content;
@@ -17,15 +27,24 @@ nav,
 
 nav {
   width: 100%;
-  justify-content: space-around;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
 }
 
 .navOptions {
   list-style-type: none;
   gap: 3vw;
+  right: 15vw;
 }
 
-.navOptions li:hover {
+.pageName {
+  left: 15vw;
+}
+
+.navOptions li a:hover {
   color: #f9995d;
 }
 
@@ -740,12 +759,12 @@ nav {
   padding-right: 5.4vw;
 }
 
-.contactDetails h3 span{
+.contactDetails h3 span {
   font-style: italic;
   font-weight: bolder;
   position: absolute;
-  left: 16%;
-  margin-top: 1.5vh;
+  left: 15%;
+  margin-top: 1.4vh;
 }
 
 .contactDetails input {
@@ -766,17 +785,17 @@ nav {
   color: #ffffff;
 }
 
-.contactDetails img{
-  width: 4.5rem;
+.contactDetails img {
+  width: 4rem;
 }
 
-.footer{
+.footer {
   background-color: #2947a9;
   width: 100%;
   height: 7.5vh;
 }
 
-.footer p{
+.footer p {
   color: #ffffff;
   font-size: 2.2vh;
   position: relative;
