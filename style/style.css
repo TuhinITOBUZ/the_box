@@ -12,12 +12,12 @@ nav,
 .navOptions {
   display: flex;
   flex-direction: row;
+  height: fit-content;
 }
 
 nav {
   width: 100%;
   justify-content: space-around;
-  height: fit-content;
 }
 
 .navOptions {
@@ -30,7 +30,6 @@ nav {
 }
 
 .pageName {
-  margin: 20px;
   justify-content: center;
   align-items: center;
   gap: 15px;
@@ -41,9 +40,8 @@ nav {
 }
 
 .pageLogo img {
-  margin-top: 20px;
-  width: 1.75vw;
-  height: 4vh;
+  width: 2vw;
+  height: fit-content;
 }
 
 .navOptions li {
