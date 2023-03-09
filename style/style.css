@@ -10,19 +10,16 @@ body {
   background-color: #ffffff;
 }
 
-.navBackground {
-  width: 100%;
-  height: 10vh;
-}
-
 nav,
 .pageName,
 .navOptions {
-  position: fixed;
+  position: relative;
   z-index: 100;
   display: flex;
   flex-direction: row;
   height: fit-content;
+  justify-content: space-around;
+  gap: 50vw;
 }
 
 nav {
@@ -69,10 +66,6 @@ nav a {
   font-size: 1vw;
   font-style: normal;
   height: fit-content;
-}
-
-.navOptions li:nth-child(5) {
-  color: #f9995d;
 }
 
 .pageBanner {
@@ -135,9 +128,9 @@ nav a {
 .pageBannerBackButton,
 .pageBannerNextButton {
   background-color: #292e3d;
-  width: 13.5vw;
-  height: 5vh;
-  color: #ffffff;
+  width: 13.4vw;
+  padding: 8px 0.5px;
+
   display: flex;
   gap: 15px;
   font-size: 2vh;
@@ -145,10 +138,16 @@ nav a {
   align-items: center;
 }
 
+.pageBannerBackButton a,
+.pageBannerNextButton a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .pageBannerNextButton img,
 .pageBannerBackButton img {
-  width: 40px;
-  height: 30px;
+  width: 30px;
+  height: 20px;
 }
 
 .reputation {
@@ -170,33 +169,33 @@ nav a {
   gap: 3vw;
 }
 
-.reputationItems-1,
-.reputationItems-2,
-.reputationItems-3 {
+.reputationItemsBestServices,
+.reputationItemsBestDesign,
+.reputationItemsBestTeams {
   border: 1.5px solid #e0e3eb;
   border-radius: 5px;
   width: 20vw;
   height: 15vw;
 }
 
-.reputationItems-1 img,
-.reputationItems-2 img,
-.reputationItems-3 img {
+.reputationItemsBestServices img,
+.reputationItemsBestDesign img,
+.reputationItemsBestTeams img {
   width: 4vw;
   height: auto;
   margin: 30px;
 }
 
-.reputationItems-1 h3,
-.reputationItems-2 h3,
-.reputationItems-3 h3 {
+.reputationItemsBestServices h3,
+.reputationItemsBestDesign h3,
+.reputationItemsBestTeams h3 {
   margin: -5px auto auto 30px;
   font-size: 1.5vw;
 }
 
-.reputationItems-1 p,
-.reputationItems-2 p,
-.reputationItems-3 p {
+.reputationItemsBestServices p,
+.reputationItemsBestDesign p,
+.reputationItemsBestTeams p {
   margin: 20px 30px;
   font-size: 1vw;
 }
@@ -213,7 +212,7 @@ nav a {
   position: relative;
   z-index: 1;
   left: 10vw;
-  top: 18vh;
+  top: 15vh;
 }
 
 .aboutSubBox {
@@ -221,7 +220,7 @@ nav a {
   position: relative;
   z-index: 2;
   width: 30vw;
-  height: 70vh;
+  height: 60vh;
   top: 25vh;
   left: -3vw;
 }
@@ -232,7 +231,7 @@ nav a {
 }
 
 .aboutUs p {
-  font-size: 3vh;
+  font-size: 2vh;
   margin: 4vh;
   justify-content: left;
 }
@@ -241,6 +240,8 @@ nav a {
   width: 13vw;
   height: 5vh;
   margin: 4vh;
+  position: relative;
+  top: 5vh;
   color: #2947a9;
   font-size: 1.8vh;
   font-weight: 600;
@@ -291,9 +292,9 @@ nav a {
   font-size: 2vw;
 }
 
-.service-1,
-.service-3,
-.service-5 {
+.serviceConstruction,
+.serviceConsultation,
+.serviceArchitecture {
   width: 20vw;
   height: 30vh;
   background-color: #ffffff;
@@ -304,9 +305,9 @@ nav a {
   color: #2947a9;
 }
 
-.service-2,
-.service-4,
-.service-6 {
+.serviceRenovation,
+.serviceRepairServices,
+.serviceElectric {
   width: 20vw;
   height: 30vh;
   background-color: #2947a9;
@@ -347,8 +348,8 @@ nav a {
 
 .experience img {
   position: relative;
-  width: 7vw;
-  height: 13vh;
+  width: 8vw;
+  height: 12vh;
 }
 
 .experienceItems p {
@@ -356,16 +357,16 @@ nav a {
   position: relative;
   left: 10vw;
   color: #525b7a;
-  font-size: 1vw;
+  font-size: 0.9vw;
   text-align: left;
   letter-spacing: 5px;
   font-weight: 600;
 }
 
-.experienceItem-1,
-.experienceItem-2,
-.experienceItem-3,
-.experienceItem-4 {
+.experienceItemHappyClients,
+.experienceItemProjectsCompleted,
+.experienceItemAwardsWin,
+.experienceItemYearsInBusiness {
   width: 20vw;
   height: 18vh;
   box-shadow: 0px 12px 16px -4px rgba(17, 24, 39, 0.1);
@@ -373,72 +374,77 @@ nav a {
   background: transparent;
 }
 
-.experienceItem-1,
-.experienceItem-3 {
+.experienceItemHappyClients,
+.experienceItemAwardsWin {
   position: relative;
   left: 17vw;
   z-index: 2;
 }
 
-.experienceItem-2,
-.experienceItem-4 {
+.experienceItemProjectsCompleted,
+.experienceItemYearsInBusiness {
   position: relative;
   z-index: 1;
 }
 
-.experienceItem-1 {
+.experienceItemHappyClients {
   top: 5vh;
 }
 
-.experienceItem-3 {
+.experienceItemAwardsWin {
   top: -5vh;
 }
 
-.experienceItem-4 {
+.experienceItemYearsInBusiness {
   top: -10vh;
 }
 
-.experienceItem-1 h3 {
+.experienceItemHappyClients h3 {
   top: -23vh;
+  left: 2vw;
 }
 
-.experienceItem-1 img {
+.experienceItemHappyClients img {
   top: -4vh;
   left: 80%;
 }
 
-.experienceItem-2 img {
+.experienceItemProjectsCompleted img {
   top: -4vh;
   left: -3vw;
 }
 
-.experienceItem-3 img {
+.experienceItemAwardsWin img {
   top: -4vh;
-  left: 55%;
+  left: 75%;
 }
 
-.experienceItem-4 img {
+.experienceItemYearsInBusiness img {
   top: 10vh;
-  left: 90%;
+  left: 92%;
 }
 
-.experienceItem-3 h3,
-.experienceItem-2 h3,
-.experienceItem-4 h3 {
+.experienceItemAwardsWin h3,
+.experienceItemProjectsCompleted h3,
+.experienceItemYearsInBusiness h3 {
   top: -24vh;
-  left: 4vw;
+  left: 5.5vw;
 }
 
-.experienceItem-1 p,
-.experienceItem-2 p {
+.experienceItemHappyClients p,
+.experienceItemProjectsCompleted p {
   top: -34vh;
   left: 2.75vw;
 }
 
-.experienceItem-3 p,
-.experienceItem-4 p {
+.experienceItemAwardsWin p {
   top: -35vh;
   left: 5vw;
+}
+
+.experienceItemYearsInBusiness p {
+  top: -35vh;
+  left: 3vw;
 }
 
 .experienceDetails {
@@ -458,10 +464,11 @@ nav a {
 
 .experienceDetails p {
   position: relative;
-  width: 70%;
+  width: 55%;
   left: 5vw;
   color: #525b7a;
   font-size: 1vw;
+  justify-content: left;
   text-align: left;
   letter-spacing: 5px;
   font-weight: 600;
@@ -494,7 +501,7 @@ nav a {
 
 .consultation h2 {
   width: 70%;
-  font-size: 5vh;
+  font-size: 4.5vh;
   height: fit-content;
   position: relative;
   left: 10vw;
@@ -509,7 +516,7 @@ nav a {
   height: 5vh;
   position: relative;
   top: 18vh;
-  left: -5vw;
+  left: -2vw;
   font-size: 1.85vh;
   font-weight: 600;
   border: #ffffff 2px solid;
@@ -519,7 +526,7 @@ nav a {
   position: relative;
   height: fit-content;
   width: fit-content;
-  left: -20vw;
+  left: -18.5vw;
   top: 4vh;
   font-size: 3.5vh;
   font-weight: 300;
@@ -579,10 +586,10 @@ nav a {
   height: fit-content;
 }
 
-.projectsContainer-1,
-.projectsContainer-2,
-.projectsContainer-3,
-.projectsContainer-4 {
+.projectsContainerInfraHotel,
+.projectsContainerWishStone,
+.projectsContainerParkinstonHouse,
+.projectsContainerOreganoHeight {
   display: flex;
   flex-direction: column;
   background-color: #2947a9;
@@ -590,26 +597,26 @@ nav a {
   height: 47vh;
 }
 
-.projectsContainer-1 img,
-.projectsContainer-2 img,
-.projectsContainer-3 img,
-.projectsContainer-4 img {
+.projectsContainerInfraHotel img,
+.projectsContainerWishStone img,
+.projectsContainerParkinstonHouse img,
+.projectsContainerOreganoHeight img {
   width: 26vw;
   height: 35vh;
 }
 
-.projectsContainer-1 h3,
-.projectsContainer-2 h3,
-.projectsContainer-3 h3,
-.projectsContainer-4 h3 {
+.projectsContainerInfraHotel h3,
+.projectsContainerWishStone h3,
+.projectsContainerParkinstonHouse h3,
+.projectsContainerOreganoHeight h3 {
   font-size: 3vh;
   padding-left: 1vw;
 }
 
-.projectsContainer-1 p,
-.projectsContainer-2 p,
-.projectsContainer-3 p,
-.projectsContainer-4 p {
+.projectsContainerInfraHotel p,
+.projectsContainerWishStone p,
+.projectsContainerParkinstonHouse p,
+.projectsContainerOreganoHeight p {
   font-size: 1vw;
   padding-left: 1vw;
   position: relative;
@@ -629,12 +636,17 @@ nav a {
   background-color: #292e3d;
   width: 17.7vw;
   height: 8vh;
-  color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1vw;
   gap: 1vw;
+}
+
+.projectsBackButton a,
+.projectsNextButton a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .projectsBackButton img,
@@ -712,7 +724,7 @@ nav a {
 
 .contact form p {
   position: relative;
-  left: -16.8vw;
+  left: -16vw;
   top: -2vh;
 }
 
@@ -721,9 +733,12 @@ nav a {
   color: #ffffff;
   width: 15vw;
   height: 5vh;
-  font-size: 2.7vh;
+  font-size: 2vh;
   letter-spacing: 2px;
   padding: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .contactUs {
@@ -739,8 +754,9 @@ nav a {
   padding-left: 12vw;
   padding-top: 4vh;
   width: fit-content;
-  font-size: 2.8vh;
+  font-size: 2.5vh;
   margin-bottom: 10vh;
+  font-weight: 100;
 }
 
 .contactDetails span {
@@ -763,30 +779,31 @@ nav a {
   font-style: italic;
   font-weight: bolder;
   position: absolute;
-  left: 15%;
-  margin-top: 1.4vh;
+  left: 16%;
+  margin-top: 1.5vh;
+  font-weight: bolder;
 }
 
 .contactDetails input {
-  height: 5vh;
+  height: 4vh;
   width: 15vw;
   font-size: 2vh;
-  padding: 10px;
+  padding: 5px;
 }
 
 .contactDetails button {
   position: relative;
-  top: 5px;
-  height: 6.8vh;
+  height: 6vh;
+  padding: 5px;
   border-radius: 5px;
-  width: 15vw;
-  font-size: 3vh;
+  width: 12vw;
+  font-size: 2.5vh;
   background-color: #f9995d;
   color: #ffffff;
 }
 
 .contactDetails img {
-  width: 4rem;
+  width: 2.5rem;
 }
 
 .footer {
@@ -797,7 +814,7 @@ nav a {
 
 .footer p {
   color: #ffffff;
-  font-size: 2.2vh;
+  font-size: 1.8vh;
   position: relative;
   top: 2.2vh;
   left: 12vw;
