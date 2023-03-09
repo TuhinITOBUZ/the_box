@@ -11,8 +11,8 @@ body {
 }
 
 nav,
-.pageName,
-.navOptions {
+.page-name,
+.nav-options {
   position: relative;
   z-index: 100;
   display: flex;
@@ -31,21 +31,21 @@ nav a {
   color: black;
 }
 
-.navOptions {
+.nav-options {
   list-style-type: none;
   gap: 3vw;
   right: 15vw;
 }
 
-.pageName {
+.page-name {
   left: 15vw;
 }
 
-.navOptions li a:hover {
+.nav-options li a:hover {
   color: #f9995d;
 }
 
-.pageName {
+.page-name {
   justify-content: center;
   align-items: center;
   gap: 15px;
@@ -55,12 +55,12 @@ nav a {
   font-size: 1.5vw;
 }
 
-.pageLogo img {
+.page-logo img {
   width: 2vw;
   height: fit-content;
 }
 
-.navOptions li {
+.nav-options li {
   margin-top: 2vh;
   font-weight: 600;
   font-size: 1vw;
@@ -68,7 +68,7 @@ nav a {
   height: fit-content;
 }
 
-.pageBanner {
+.page-banner {
   width: 100%;
   height: 100vh;
   background-image: url("../images/pageBanner.png");
@@ -77,7 +77,7 @@ nav a {
   background-position: center;
 }
 
-.pageBanner h1 {
+.page-banner h1 {
   position: absolute;
   width: 40%;
   font-size: 5vw;
@@ -86,7 +86,7 @@ nav a {
   font-weight: bolder;
 }
 
-.pageBannerSubBox {
+.page-banner-sub-box {
   width: fit-content;
   display: flex;
   flex-direction: column;
@@ -95,7 +95,7 @@ nav a {
   margin-top: 70vh;
 }
 
-.featureProjects {
+.feature-projects {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -107,26 +107,26 @@ nav a {
   color: #ffffff;
 }
 
-.featureProjects h5 {
+.feature-projects h5 {
   margin: 20px;
   font-size: 3vh;
   font-weight: 600;
 }
 
-.featureProjects p {
+.feature-projects p {
   width: 70%;
   font-size: 3vh;
   font-weight: 200;
 }
 
-.pageBannerButtons {
+.page-banner-buttons {
   display: flex;
   flex-direction: row;
   gap: 2px;
 }
 
-.pageBannerBackButton,
-.pageBannerNextButton {
+.page-banner-back-button,
+.page-banner-next-button {
   background-color: #292e3d;
   width: 13.4vw;
   padding: 8px 0.5px;
@@ -138,14 +138,14 @@ nav a {
   align-items: center;
 }
 
-.pageBannerBackButton a,
-.pageBannerNextButton a {
+.page-banner-back-button a,
+.page-banner-next-button a {
   color: #ffffff;
   text-decoration: none;
 }
 
-.pageBannerNextButton img,
-.pageBannerBackButton img {
+.page-banner-next-button img,
+.page-banner-back-button img {
   width: 30px;
   height: 20px;
 }
@@ -163,50 +163,50 @@ nav a {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.reputationItems {
+.reputation-items {
   display: flex;
   flex-direction: row;
   gap: 3vw;
 }
 
-.reputationItemsBestServices,
-.reputationItemsBestDesign,
-.reputationItemsBestTeams {
+.reputation-items-best-services,
+.reputation-items-best-design,
+.reputation-items-best-teams {
   border: 1.5px solid #e0e3eb;
   border-radius: 5px;
   width: 20vw;
   height: 15vw;
 }
 
-.reputationItemsBestServices img,
-.reputationItemsBestDesign img,
-.reputationItemsBestTeams img {
+.reputation-items-best-services img,
+.reputation-items-best-design img,
+.reputation-items-best-teams img {
   width: 4vw;
   height: auto;
   margin: 30px;
 }
 
-.reputationItemsBestServices h3,
-.reputationItemsBestDesign h3,
-.reputationItemsBestTeams h3 {
+.reputation-items-best-services h3,
+.reputation-items-best-design h3,
+.reputation-items-best-teams h3 {
   margin: -5px auto auto 30px;
   font-size: 1.5vw;
 }
 
-.reputationItemsBestServices p,
-.reputationItemsBestDesign p,
-.reputationItemsBestTeams p {
+.reputation-items-best-services p,
+.reputation-items-best-design p,
+.reputation-items-best-teams p {
   margin: 20px 30px;
   font-size: 1vw;
 }
 
-.aboutUs {
+.about-us {
   display: flex;
   flex-direction: row;
   color: #ffffff;
 }
 
-.aboutUs img {
+.about-us img {
   width: 65vw;
   height: 90vh;
   position: relative;
@@ -215,7 +215,7 @@ nav a {
   top: 15vh;
 }
 
-.aboutSubBox {
+.about-sub-box {
   background-color: #2947a9;
   position: relative;
   z-index: 2;
@@ -225,18 +225,18 @@ nav a {
   left: -3vw;
 }
 
-.aboutUs h3 {
+.about-us h3 {
   font-size: 6vh;
   margin: 4vh;
 }
 
-.aboutUs p {
+.about-us p {
   font-size: 2vh;
   margin: 4vh;
   justify-content: left;
 }
 
-.aboutUs button {
+.about-us button {
   width: 13vw;
   height: 5vh;
   margin: 4vh;
@@ -263,7 +263,7 @@ nav a {
   font-size: 5vh;
 }
 
-.subServices {
+.sub-services {
   display: flex;
   flex-wrap: wrap;
   gap: 5vw;
@@ -292,9 +292,9 @@ nav a {
   font-size: 2vw;
 }
 
-.serviceConstruction,
-.serviceConsultation,
-.serviceArchitecture {
+.service-construction,
+.service-consultation,
+.service-architecture {
   width: 20vw;
   height: 30vh;
   background-color: #ffffff;
@@ -305,9 +305,9 @@ nav a {
   color: #2947a9;
 }
 
-.serviceRenovation,
-.serviceRepairServices,
-.serviceElectric {
+.service-renovation,
+.service-repair-services,
+.service-electric {
   width: 20vw;
   height: 30vh;
   background-color: #2947a9;
@@ -325,7 +325,7 @@ nav a {
   flex-direction: row;
 }
 
-.experienceItems {
+.experience-items {
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -333,12 +333,12 @@ nav a {
   align-items: center;
 }
 
-.experienceItems h3 {
+.experience-items h3 {
   font-size: 10vh;
   position: relative;
 }
 
-.experienceItems p {
+.experience-items p {
   font-size: 2.5vh;
   width: 60%;
   height: 2vh;
@@ -352,7 +352,7 @@ nav a {
   height: 12vh;
 }
 
-.experienceItems p {
+.experience-items p {
   width: 85%;
   position: relative;
   left: 10vw;
@@ -363,10 +363,10 @@ nav a {
   font-weight: 600;
 }
 
-.experienceItemHappyClients,
-.experienceItemProjectsCompleted,
-.experienceItemAwardsWin,
-.experienceItemYearsInBusiness {
+.experience-item-happy-clients,
+.experience-item-projects-completed,
+.experience-item-awards-win,
+.experience-item-years-in-business {
   width: 20vw;
   height: 18vh;
   box-shadow: 0px 12px 16px -4px rgba(17, 24, 39, 0.1);
@@ -374,84 +374,84 @@ nav a {
   background: transparent;
 }
 
-.experienceItemHappyClients,
-.experienceItemAwardsWin {
+.experience-item-happy-clients,
+.experience-item-awards-win {
   position: relative;
   left: 17vw;
   z-index: 2;
 }
 
-.experienceItemProjectsCompleted,
-.experienceItemYearsInBusiness {
+.experience-item-projects-completed,
+.experience-item-years-in-business {
   position: relative;
   z-index: 1;
 }
 
-.experienceItemHappyClients {
+.experience-item-happy-clients {
   top: 5vh;
 }
 
-.experienceItemAwardsWin {
+.experience-item-awards-win {
   top: -5vh;
 }
 
-.experienceItemYearsInBusiness {
+.experience-item-years-in-business {
   top: -10vh;
 }
 
-.experienceItemHappyClients h3 {
+.experience-item-happy-clients h3 {
   top: -23vh;
   left: 2vw;
 }
 
-.experienceItemHappyClients img {
+.experience-item-happy-clients img {
   top: -4vh;
   left: 80%;
 }
 
-.experienceItemProjectsCompleted img {
+.experience-item-projects-completed img {
   top: -4vh;
   left: -3vw;
 }
 
-.experienceItemAwardsWin img {
+.experience-item-awards-win img {
   top: -4vh;
   left: 75%;
 }
 
-.experienceItemYearsInBusiness img {
+.experience-item-years-in-business img {
   top: 10vh;
   left: 92%;
 }
 
-.experienceItemAwardsWin h3,
-.experienceItemProjectsCompleted h3,
-.experienceItemYearsInBusiness h3 {
+.experience-item-awards-win h3,
+.experience-item-projects-completed h3,
+.experience-item-years-in-business h3 {
   top: -24vh;
   left: 5.5vw;
 }
 
-.experienceItemHappyClients p,
-.experienceItemProjectsCompleted p {
+.experience-item-happy-clients p,
+.experience-item-projects-completed p {
   top: -34vh;
   left: 2.75vw;
 }
 
-.experienceItemAwardsWin p {
+.experience-item-awards-win p {
   top: -35vh;
   left: 5vw;
 }
 
-.experienceItemYearsInBusiness p {
+.experience-item-years-in-business p {
   top: -35vh;
   left: 3vw;
 }
 
-.experienceDetails {
+.experience-details {
   width: 50%;
 }
 
-.experienceDetails h2 {
+.experience-details h2 {
   margin-top: 12vh;
   position: relative;
   left: 5vw;
@@ -462,7 +462,7 @@ nav a {
   text-align: left;
 }
 
-.experienceDetails p {
+.experience-details p {
   position: relative;
   width: 55%;
   left: 5vw;
@@ -474,7 +474,7 @@ nav a {
   font-weight: 600;
 }
 
-.experienceDetails button {
+.experience-details button {
   background-color: #2947a9;
   font-size: 1vw;
   color: #ffffff;
@@ -542,7 +542,7 @@ nav a {
   align-items: start;
 }
 
-.projectsSidebar {
+.projects-sidebar {
   display: flex;
   height: fit-content;
   flex-direction: column;
@@ -550,19 +550,19 @@ nav a {
   width: 30%;
 }
 
-.projectsSidebar h3,
-.projectsSidebar p {
+.projects-sidebar h3,
+.projects-sidebar p {
   width: fit-content;
   position: relative;
   top: 0.75vh;
   left: 10vw;
 }
 
-.projectsSidebar h3 {
+.projects-sidebar h3 {
   font-size: 5vh;
 }
 
-.projectsSidebar p:nth-child(2) {
+.projects-sidebar p:nth-child(2) {
   font-size: 2.5vh;
   padding-left: 1vw;
   border-left: 0.5vw solid #2947a9;
@@ -570,13 +570,13 @@ nav a {
   font-weight: 600;
 }
 
-.projectsSidebar p {
+.projects-sidebar p {
   font-size: 2.5vh;
   padding-left: 1vw;
   color: #c2c7d6;
 }
 
-.projectsContainer {
+.projects-container {
   display: flex;
   width: 100%;
   height: fit-content;
@@ -586,10 +586,10 @@ nav a {
   height: fit-content;
 }
 
-.projectsContainerInfraHotel,
-.projectsContainerWishStone,
-.projectsContainerParkinstonHouse,
-.projectsContainerOreganoHeight {
+.projects-container-infra-hotel,
+.projects-container-wish-stone,
+.projects-container-parkinston-house,
+.projects-container-oregano-height {
   display: flex;
   flex-direction: column;
   background-color: #2947a9;
@@ -597,33 +597,33 @@ nav a {
   height: 47vh;
 }
 
-.projectsContainerInfraHotel img,
-.projectsContainerWishStone img,
-.projectsContainerParkinstonHouse img,
-.projectsContainerOreganoHeight img {
+.projects-container-infra-hotel img,
+.projects-container-wish-stone img,
+.projects-container-parkinston-house img,
+.projects-container-oregano-height img {
   width: 26vw;
   height: 35vh;
 }
 
-.projectsContainerInfraHotel h3,
-.projectsContainerWishStone h3,
-.projectsContainerParkinstonHouse h3,
-.projectsContainerOreganoHeight h3 {
+.projects-container-infra-hotel h3,
+.projects-container-wish-stone h3,
+.projects-container-parkinston-house h3,
+.projects-container-oregano-height h3 {
   font-size: 3vh;
   padding-left: 1vw;
 }
 
-.projectsContainerInfraHotel p,
-.projectsContainerWishStone p,
-.projectsContainerParkinstonHouse p,
-.projectsContainerOreganoHeight p {
+.projects-container-infra-hotel p,
+.projects-container-wish-stone p,
+.projects-container-parkinston-house p,
+.projects-container-oregano-height p {
   font-size: 1vw;
   padding-left: 1vw;
   position: relative;
   top: -4vh;
 }
 
-.projectsContainerButtons {
+.projects-container-buttons {
   display: flex;
   flex-direction: row;
   gap: 1vw;
@@ -631,8 +631,8 @@ nav a {
   height: fit-content;
 }
 
-.projectsBackButton,
-.projectsNextButton {
+.projects-back-button,
+.projects-next-button {
   background-color: #292e3d;
   width: 17.7vw;
   height: 8vh;
@@ -643,19 +643,19 @@ nav a {
   gap: 1vw;
 }
 
-.projectsBackButton a,
-.projectsNextButton a {
+.projects-back-button a,
+.projects-next-button a {
   color: #ffffff;
   text-decoration: none;
 }
 
-.projectsBackButton img,
-.projectsNextButton img {
+.projects-back-button img,
+.projects-next-button img {
   width: 2vw;
   height: 3vh;
 }
 
-.projectsDotsDesign {
+.projects-dots-design {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -666,14 +666,14 @@ nav a {
   height: 8vh;
 }
 
-.dotsDesign {
+.dots-design {
   background-color: #f6f8f7;
   width: 1.5vw;
   height: 3vh;
   border-radius: 50%;
 }
 
-.projectsDotsDesign div:nth-child(1) {
+.projects-dots-design div:nth-child(1) {
   background-color: #2947a9;
 }
 
@@ -750,7 +750,7 @@ nav a {
   gap: 4vw;
 }
 
-.contactDetails {
+.contact-details {
   padding-left: 12vw;
   padding-top: 4vh;
   width: fit-content;
@@ -759,23 +759,23 @@ nav a {
   font-weight: 100;
 }
 
-.contactDetails span {
+.contact-details span {
   color: #2947a9;
 }
 
-.contactDetails h4:nth-child(1) span {
+.contact-details h4:nth-child(1) span {
   padding-right: 3.7vw;
 }
 
-.contactDetails h4:nth-child(2) span {
+.contact-details h4:nth-child(2) span {
   padding-right: 5vw;
 }
 
-.contactDetails h4:nth-child(3) span {
+.contact-details h4:nth-child(3) span {
   padding-right: 5.4vw;
 }
 
-.contactDetails h3 span {
+.contact-details h3 span {
   font-style: italic;
   font-weight: bolder;
   position: absolute;
@@ -784,14 +784,14 @@ nav a {
   font-weight: bolder;
 }
 
-.contactDetails input {
+.contact-details input {
   height: 4vh;
   width: 15vw;
   font-size: 2vh;
   padding: 5px;
 }
 
-.contactDetails button {
+.contact-details button {
   position: relative;
   height: 6vh;
   padding: 5px;
@@ -802,7 +802,7 @@ nav a {
   color: #ffffff;
 }
 
-.contactDetails img {
+.contact-details img {
   width: 2.5rem;
 }
 
